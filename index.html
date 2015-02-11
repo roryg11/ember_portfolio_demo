@@ -9,42 +9,57 @@
 </head>
 <body>
   <script type="text/x-handlebars">
-  <div class="ui segment">
-    <div class="massive header">
-      <h1>Pretend Portfolio Site</h1>
+
+  <div class="ui page grid">
+    <div class="header">
+      <div class="ui image floated left">
+        <img src="https://m1.behance.net/profiles18/2049053/prosite/2-1546876-8b6ee3ea94da64cba3eb38ae09b8d14d.png" alt="logo"/>
+      </div>
+      <h1 class="header huge">Rory Grant</h1>
     </div>
   </div>
 
-  <div class="ui text demo menu">
-    <a class="active item">
+  <div class="ui page grid">
+    <div class="ui dividing header"></div>
+  </div>
+
+  <div class="ui page grid">
+    <div class="ui text demo menu" id="menu-bar">
+      <a class="item">
       {{#link-to 'index'}}About Me{{/link-to}}
-    </a>
-    <a class="item">
+      </a>
+      <a class="item">
       {{#link-to 'resume'}} Resume {{/link-to}}
-    </a>
-    <a class="item">
+      </a>
+      <a class="item">
       {{#link-to 'portfolio'}}Portfolio{{/link-to}}
-    </a>
+      </a>
+    </div>
   </div>
     {{outlet}}
   </script>
 
   <script type="text/x-handlebars" id="index">
-  <div class="ui segment">
-    <div class="ui header">
-      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/230215_1870464436107_5142032_n.jpg?oh=7be29b2481564f87f06f5cbd747984d4&oe=55664F2F&__gda__=1435897038_bd8a9c7dc3f174d6a2a1442d73c299f8" class="ui image medium rounded floated left">
-      <h1>About Me</h1>
+  <div class="ui two column page grid">
+    <div class="column">
+      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/230215_1870464436107_5142032_n.jpg?oh=7be29b2481564f87f06f5cbd747984d4&oe=55664F2F&__gda__=1435897038_bd8a9c7dc3f174d6a2a1442d73c299f8" class="ui image large rounded floated left">
     </div>
-    <div class="ui divider"></div>
-    <div class="content">
-    <p>Single-origin coffee Williamsburg roof party, 3 wolf moon fingerstache lomo pug.
-    Keffiyeh vinyl pug, paleo American Apparel umami cred tote bag hella locavore Bushwick.
-    Raw denim Neutra VHS Odd Future mlkshk lomo Schlitz banjo, organic meh four dollar toast
-    lo-fi twee art party. Bushwick aesthetic sriracha, DIY banjo jean shorts health goth messenger
-    bag YOLO ugh dreamcatcher. Blog meditation seitan, paleo XOXO fashion axe Wes Anderson PBRB
-    tilde iPhone craft beer normcore. Mlkshk next level Banksy.
-    </p>
+    <div class="column">
+      <div class="ui header">
+        <h1>About Me</h1>
+      </div>
+      <div class="ui dividing header"></div>
+      <div class="content">
+        <p>Single-origin coffee Williamsburg roof party, 3 wolf moon fingerstache lomo pug.
+        Keffiyeh vinyl pug, paleo American Apparel umami cred tote bag hella locavore Bushwick.
+        Raw denim Neutra VHS Odd Future mlkshk lomo Schlitz banjo, organic meh four dollar toast
+        lo-fi twee art party. Bushwick aesthetic sriracha, DIY banjo jean shorts health goth messenger
+        bag YOLO ugh dreamcatcher. Blog meditation seitan, paleo XOXO fashion axe Wes Anderson PBRB
+        tilde iPhone craft beer normcore. Mlkshk next level Banksy.
+        </p>
+      </div>
     </div>
+
   </div>
 
   </script>
